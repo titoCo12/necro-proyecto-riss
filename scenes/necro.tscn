@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://degryykid6pjq"]
+
+[ext_resource type="Texture2D" uid="uid://dcvv2tvxd4ojl" path="res://assets/necro/idle/necro-right-idle-0.png" id="1_krnip"]
+[ext_resource type="Texture2D" uid="uid://bl41tdnci71vy" path="res://assets/necro/idle/necro-right-idle-1.png" id="2_g2cup"]
+[ext_resource type="Texture2D" uid="uid://1ryfd5liw28l" path="res://assets/necro/idle/necro-right-idle-2.png" id="3_sn2tk"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_klls2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_krnip")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_g2cup")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_sn2tk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_g2cup")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 4.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sq1rf"]
+size = Vector2(31, 110)
+
+[node name="necro" type="CharacterBody2D"]
+position = Vector2(608, 322)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_klls2")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3, 1)
+shape = SubResource("RectangleShape2D_sq1rf")

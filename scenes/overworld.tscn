@@ -1,3 +1,12 @@
-[gd_scene format=3 uid="uid://c5bblvt1wq64x"]
+[gd_scene load_steps=2 format=3 uid="uid://c5bblvt1wq64x"]
+
+[ext_resource type="PackedScene" uid="uid://degryykid6pjq" path="res://scenes/necro.tscn" id="1_vcvsq"]
 
 [node name="Overworld" type="Node2D"]
+
+[node name="necro" parent="." instance=ExtResource("1_vcvsq")]
+position = Vector2(291, 169)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(287, 158)
+zoom = Vector2(1.5, 1.5)
