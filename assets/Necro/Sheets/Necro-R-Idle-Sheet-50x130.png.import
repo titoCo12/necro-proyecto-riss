@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1ryfd5liw28l"
-path="res://.godot/imported/necro-right-idle-2.png-3664462e9630b1ae92c4619c9a4858c1.ctex"
+uid="uid://612j1777i3aw"
+path="res://.godot/imported/Necro-R-Idle-Sheet-50x130.png-1779341e2fb5b103b0f2ce73ff75985a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/necro/idle/necro-right-idle-2.png"
-dest_files=["res://.godot/imported/necro-right-idle-2.png-3664462e9630b1ae92c4619c9a4858c1.ctex"]
+source_file="res://assets/Necro/Sheets/Necro-R-Idle-Sheet-50x130.png"
+dest_files=["res://.godot/imported/Necro-R-Idle-Sheet-50x130.png-1779341e2fb5b103b0f2ce73ff75985a.ctex"]
 
 [params]
 
