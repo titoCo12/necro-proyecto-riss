@@ -1,10 +1,15 @@
-[gd_scene load_steps=20 format=3 uid="uid://degryykid6pjq"]
+[gd_scene load_steps=22 format=3 uid="uid://degryykid6pjq"]
 
 [ext_resource type="Script" path="res://scripts/necro.gd" id="1_2bt41"]
+[ext_resource type="Texture2D" uid="uid://dwndh7h3rb01r" path="res://assets/Necro/Necro-D-Idle.png" id="2_7u4m7"]
 [ext_resource type="Texture2D" uid="uid://612j1777i3aw" path="res://assets/Necro/Sheets/Necro-R-Idle-Sheet-50x130.png" id="2_g2oyl"]
 [ext_resource type="Texture2D" uid="uid://bo4yt0r4t6qfj" path="res://assets/Necro/Sheets/Necro-L-Idle-Sheet-50x130.png" id="2_gehd7"]
 [ext_resource type="Texture2D" uid="uid://bf551u1yaoirw" path="res://assets/Necro/Sheets/Necro-L-Walking-Sheet-55x122.png" id="4_7cds0"]
 [ext_resource type="Texture2D" uid="uid://no5rcovgcotq" path="res://assets/Necro/Sheets/Necro-R-Walking-Sheet-55x122.png" id="5_mrlw1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qjvrm"]
+atlas = ExtResource("2_7u4m7")
+region = Rect2(0, 0, 50, 130)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fpn7a"]
 atlas = ExtResource("2_gehd7")
@@ -56,7 +61,10 @@ region = Rect2(55, 0, 55, 122)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_klls2"]
 animations = [{
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qjvrm")
+}],
 "loop": true,
 "name": &"Idle-D",
 "speed": 4.0
@@ -142,7 +150,7 @@ script = ExtResource("1_2bt41")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_klls2")
-animation = &"Walking-R"
+animation = &"Idle-D"
 autoplay = "Idle-R"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
