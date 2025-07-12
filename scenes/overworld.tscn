@@ -1,8 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://c5bblvt1wq64x"]
+[gd_scene load_steps=3 format=3 uid="uid://c5bblvt1wq64x"]
 
+[ext_resource type="PackedScene" uid="uid://cejdl82adsy0m" path="res://scenes/piso.tscn" id="1_16ktt"]
 [ext_resource type="PackedScene" uid="uid://degryykid6pjq" path="res://scenes/necro.tscn" id="1_vcvsq"]
 
 [node name="Overworld" type="Node2D"]
+
+[node name="piso" parent="." instance=ExtResource("1_16ktt")]
+position = Vector2(250, 127)
 
 [node name="necro" parent="." instance=ExtResource("1_vcvsq")]
 position = Vector2(291, 169)

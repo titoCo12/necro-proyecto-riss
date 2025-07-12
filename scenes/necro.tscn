@@ -1,6 +1,6 @@
 [gd_scene load_steps=22 format=3 uid="uid://degryykid6pjq"]
 
-[ext_resource type="Script" path="res://scripts/necro.gd" id="1_2bt41"]
+[ext_resource type="Script" uid="uid://crt86hmla70oh" path="res://scripts/necro.gd" id="1_2bt41"]
 [ext_resource type="Texture2D" uid="uid://dwndh7h3rb01r" path="res://assets/Necro/Necro-D-Idle.png" id="2_7u4m7"]
 [ext_resource type="Texture2D" uid="uid://612j1777i3aw" path="res://assets/Necro/Sheets/Necro-R-Idle-Sheet-50x130.png" id="2_g2oyl"]
 [ext_resource type="Texture2D" uid="uid://bo4yt0r4t6qfj" path="res://assets/Necro/Sheets/Necro-L-Idle-Sheet-50x130.png" id="2_gehd7"]

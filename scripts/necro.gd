@@ -46,4 +46,3 @@ func walk_animation(speed):
 		animation.play("Walking-" + last_dir)
 	else:
 		animation.play("Idle-" + last_dir)	
-
