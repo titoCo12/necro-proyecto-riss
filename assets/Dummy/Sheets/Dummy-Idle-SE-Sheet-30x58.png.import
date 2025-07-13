@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bf551u1yaoirw"
-path="res://.godot/imported/Necro-L-Walking-Sheet-55x122.png-e94cffb339b97c324caca4b51d3776b6.ctex"
+uid="uid://biw6yljdwvs3a"
+path="res://.godot/imported/Dummy-Idle-SE-Sheet-30x58.png-b7f5be9a8434e43a7e759f0470520463.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Necro/Sheets/Necro-L-Walking-Sheet-55x122.png"
-dest_files=["res://.godot/imported/Necro-L-Walking-Sheet-55x122.png-e94cffb339b97c324caca4b51d3776b6.ctex"]
+source_file="res://assets/Dummy/Sheets/Dummy-Idle-SE-Sheet-30x58.png"
+dest_files=["res://.godot/imported/Dummy-Idle-SE-Sheet-30x58.png-b7f5be9a8434e43a7e759f0470520463.ctex"]
 
 [params]
 

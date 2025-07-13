@@ -1,15 +1,15 @@
 [gd_scene load_steps=3 format=3 uid="uid://c5bblvt1wq64x"]
 
 [ext_resource type="PackedScene" uid="uid://cejdl82adsy0m" path="res://scenes/piso.tscn" id="1_16ktt"]
-[ext_resource type="PackedScene" uid="uid://degryykid6pjq" path="res://scenes/necro.tscn" id="1_vcvsq"]
+[ext_resource type="PackedScene" uid="uid://degryykid6pjq" path="res://scenes/Dummy.tscn" id="2_16ktt"]
 
 [node name="Overworld" type="Node2D"]
 
 [node name="piso" parent="." instance=ExtResource("1_16ktt")]
 position = Vector2(250, 127)
 
-[node name="necro" parent="." instance=ExtResource("1_vcvsq")]
-position = Vector2(291, 169)
+[node name="Dummy" parent="." instance=ExtResource("2_16ktt")]
+position = Vector2(267, 198)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(287, 158)

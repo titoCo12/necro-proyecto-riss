@@ -1,0 +1,59 @@
+[gd_scene load_steps=9 format=3 uid="uid://degryykid6pjq"]
+
+[ext_resource type="Script" uid="uid://crt86hmla70oh" path="res://scripts/necro.gd" id="1_2hh5m"]
+[ext_resource type="Texture2D" uid="uid://biw6yljdwvs3a" path="res://assets/Dummy/Sheets/Dummy-Idle-SE-Sheet-30x58.png" id="2_k1tqs"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c2byg"]
+atlas = ExtResource("2_k1tqs")
+region = Rect2(0, 0, 30, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_483pv"]
+atlas = ExtResource("2_k1tqs")
+region = Rect2(30, 0, 30, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v5msd"]
+atlas = ExtResource("2_k1tqs")
+region = Rect2(60, 0, 30, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eax04"]
+atlas = ExtResource("2_k1tqs")
+region = Rect2(90, 0, 30, 58)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_klls2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c2byg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_483pv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v5msd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eax04")
+}],
+"loop": true,
+"name": &"Idle-SD",
+"speed": 6.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sq1rf"]
+size = Vector2(17, 47.5)
+
+[node name="Dummy" type="CharacterBody2D"]
+position = Vector2(608, 322)
+script = ExtResource("1_2hh5m")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_klls2")
+animation = &"Idle-SD"
+autoplay = "Idle-SD"
+frame = 2
+frame_progress = 0.361394
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(-0.5, 0.25)
+shape = SubResource("RectangleShape2D_sq1rf")
