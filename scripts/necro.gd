@@ -7,7 +7,7 @@ const UP = 'W'
 
 
 var speed = 90
-var last_dir = RIGHT
+var last_dir = DOWN
 
 
 func _physics_process(delta):
