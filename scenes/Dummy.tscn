@@ -1,4 +1,4 @@
-[gd_scene load_steps=52 format=3 uid="uid://degryykid6pjq"]
+[gd_scene load_steps=62 format=3 uid="uid://degryykid6pjq"]
 
 [ext_resource type="Script" uid="uid://crt86hmla70oh" path="res://scripts/necro.gd" id="1_2hh5m"]
 [ext_resource type="Texture2D" uid="uid://3ccqaopbi8jq" path="res://assets/Dummy/Sheets/Dummy-Idle-SA-Sheet.png" id="2_de8r6"]
@@ -12,6 +12,8 @@
 [ext_resource type="Texture2D" uid="uid://7reml3bf087g" path="res://assets/Dummy/Sheets/Dummy-Walking-A-Sheet-30x58.png" id="7_4hvuk"]
 [ext_resource type="Texture2D" uid="uid://ceic15ry1kwc1" path="res://assets/Dummy/Sheets/Dummy-Idle-W-Sheet-30x58.png" id="7_fo5bi"]
 [ext_resource type="Texture2D" uid="uid://c0ngcxpgyd0tj" path="res://assets/Dummy/Sheets/Dummy-Walking-D-Sheet-30x58.png" id="7_xg8qx"]
+[ext_resource type="Texture2D" uid="uid://ciidkgljjvuu5" path="res://assets/Dummy/Sheets/Dummy-Idle-WA-Sheet-30x58.png" id="8_7144t"]
+[ext_resource type="Texture2D" uid="uid://dlrjp8o3igy67" path="res://assets/Dummy/Sheets/Dummy-Idle-WD-Sheet-30x58.png" id="9_0ev6b"]
 [ext_resource type="Texture2D" uid="uid://jnqmn7wy4bvb" path="res://assets/Dummy/Sheets/Dummy-Walking-W-Sheet-30x58.png" id="13_dcx5d"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_c4hf0"]
@@ -108,6 +110,38 @@ region = Rect2(60, 0, 30, 58)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pq2bw"]
 atlas = ExtResource("7_fo5bi")
+region = Rect2(90, 0, 30, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_556tn"]
+atlas = ExtResource("8_7144t")
+region = Rect2(0, 0, 30, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cc2gk"]
+atlas = ExtResource("8_7144t")
+region = Rect2(30, 0, 30, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pyqhe"]
+atlas = ExtResource("8_7144t")
+region = Rect2(60, 0, 30, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_te3lo"]
+atlas = ExtResource("8_7144t")
+region = Rect2(90, 0, 30, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8j37o"]
+atlas = ExtResource("9_0ev6b")
+region = Rect2(0, 0, 30, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_btayf"]
+atlas = ExtResource("9_0ev6b")
+region = Rect2(30, 0, 30, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_srgtk"]
+atlas = ExtResource("9_0ev6b")
+region = Rect2(60, 0, 30, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mi045"]
+atlas = ExtResource("9_0ev6b")
 region = Rect2(90, 0, 30, 58)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gxsqf"]
@@ -264,6 +298,40 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_556tn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cc2gk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pyqhe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_te3lo")
+}],
+"loop": true,
+"name": &"Idle-WA",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8j37o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_btayf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_srgtk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mi045")
+}],
+"loop": true,
+"name": &"Idle-WD",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_gxsqf")
 }, {
 "duration": 1.0,
@@ -338,10 +406,8 @@ script = ExtResource("1_2hh5m")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_klls2")
-animation = &"Walking-W"
+animation = &"Idle-WD"
 autoplay = "Idle-S"
-frame = 1
-frame_progress = 0.344274
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
