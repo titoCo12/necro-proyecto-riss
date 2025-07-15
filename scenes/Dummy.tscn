@@ -1,4 +1,4 @@
-[gd_scene load_steps=62 format=3 uid="uid://degryykid6pjq"]
+[gd_scene load_steps=68 format=3 uid="uid://degryykid6pjq"]
 
 [ext_resource type="Script" uid="uid://crt86hmla70oh" path="res://scripts/necro.gd" id="1_2hh5m"]
 [ext_resource type="Texture2D" uid="uid://3ccqaopbi8jq" path="res://assets/Dummy/Sheets/Dummy-Idle-SA-Sheet.png" id="2_de8r6"]
@@ -6,15 +6,17 @@
 [ext_resource type="Texture2D" uid="uid://nsuioocmm88g" path="res://assets/Dummy/Sheets/Dummy-Idle-A-Sheet-30x58.png" id="2_jwj8c"]
 [ext_resource type="Texture2D" uid="uid://biw6yljdwvs3a" path="res://assets/Dummy/Sheets/Dummy-Idle-SE-Sheet-30x58.png" id="2_k1tqs"]
 [ext_resource type="Texture2D" uid="uid://kyno3qdpp5jm" path="res://assets/Dummy/Sheets/Dummy-Idle-S-Sheet-30x58.png" id="2_rkxlp"]
-[ext_resource type="Texture2D" uid="uid://coqi1banc1ouj" path="res://assets/Dummy/Sheets/Dummy-Walking-SA-Sheet.png" id="4_g20qn"]
 [ext_resource type="Texture2D" uid="uid://n4fscqg4n8i1" path="res://assets/Dummy/Sheets/Dummy-Walking-S-Sheet-30x58.png" id="5_8s2n1"]
-[ext_resource type="Texture2D" uid="uid://dteruifxwpvq1" path="res://assets/Dummy/Sheets/Dummy-Walking-SD-Sheet.png" id="5_rkxlp"]
 [ext_resource type="Texture2D" uid="uid://7reml3bf087g" path="res://assets/Dummy/Sheets/Dummy-Walking-A-Sheet-30x58.png" id="7_4hvuk"]
 [ext_resource type="Texture2D" uid="uid://ceic15ry1kwc1" path="res://assets/Dummy/Sheets/Dummy-Idle-W-Sheet-30x58.png" id="7_fo5bi"]
 [ext_resource type="Texture2D" uid="uid://c0ngcxpgyd0tj" path="res://assets/Dummy/Sheets/Dummy-Walking-D-Sheet-30x58.png" id="7_xg8qx"]
 [ext_resource type="Texture2D" uid="uid://ciidkgljjvuu5" path="res://assets/Dummy/Sheets/Dummy-Idle-WA-Sheet-30x58.png" id="8_7144t"]
 [ext_resource type="Texture2D" uid="uid://dlrjp8o3igy67" path="res://assets/Dummy/Sheets/Dummy-Idle-WD-Sheet-30x58.png" id="9_0ev6b"]
+[ext_resource type="Texture2D" uid="uid://m3ekwvcpk26" path="res://assets/Dummy/Sheets/Dummy-Walking-SA-Sheet-30x58.png" id="13_0ev6b"]
 [ext_resource type="Texture2D" uid="uid://jnqmn7wy4bvb" path="res://assets/Dummy/Sheets/Dummy-Walking-W-Sheet-30x58.png" id="13_dcx5d"]
+[ext_resource type="Texture2D" uid="uid://bldxsldg2g1i1" path="res://assets/Dummy/Sheets/Dummy-Walking-SD-Sheet-30x58.png" id="14_ayjox"]
+[ext_resource type="Texture2D" uid="uid://cm0m4ahe25m85" path="res://assets/Dummy/Sheets/Dummy-Walking-WA-Sheet-30x58.png" id="16_atmpa"]
+[ext_resource type="Texture2D" uid="uid://bwoff08qo2s3u" path="res://assets/Dummy/Sheets/Dummy-Walking-WD-Sheet-30x58.png" id="17_mm6of"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_c4hf0"]
 atlas = ExtResource("2_jwj8c")
@@ -168,20 +170,20 @@ region = Rect2(0, 0, 30, 58)
 atlas = ExtResource("5_8s2n1")
 region = Rect2(30, 0, 30, 58)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_jwj8c"]
-atlas = ExtResource("4_g20qn")
+[sub_resource type="AtlasTexture" id="AtlasTexture_myt40"]
+atlas = ExtResource("13_0ev6b")
 region = Rect2(0, 0, 30, 58)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_xg8qx"]
-atlas = ExtResource("4_g20qn")
+[sub_resource type="AtlasTexture" id="AtlasTexture_k3aoc"]
+atlas = ExtResource("13_0ev6b")
 region = Rect2(30, 0, 30, 58)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_4hvuk"]
-atlas = ExtResource("5_rkxlp")
+[sub_resource type="AtlasTexture" id="AtlasTexture_65a88"]
+atlas = ExtResource("14_ayjox")
 region = Rect2(0, 0, 30, 58)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_fo5bi"]
-atlas = ExtResource("5_rkxlp")
+[sub_resource type="AtlasTexture" id="AtlasTexture_05wy8"]
+atlas = ExtResource("14_ayjox")
 region = Rect2(30, 0, 30, 58)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rcbay"]
@@ -190,6 +192,22 @@ region = Rect2(0, 0, 30, 58)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_v41lw"]
 atlas = ExtResource("13_dcx5d")
+region = Rect2(30, 0, 30, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oomcs"]
+atlas = ExtResource("16_atmpa")
+region = Rect2(0, 0, 30, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7qasg"]
+atlas = ExtResource("16_atmpa")
+region = Rect2(30, 0, 30, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hnolx"]
+atlas = ExtResource("17_mm6of")
+region = Rect2(0, 0, 30, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qpilx"]
+atlas = ExtResource("17_mm6of")
 region = Rect2(30, 0, 30, 58)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_klls2"]
@@ -365,10 +383,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_jwj8c")
+"texture": SubResource("AtlasTexture_myt40")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_xg8qx")
+"texture": SubResource("AtlasTexture_k3aoc")
 }],
 "loop": true,
 "name": &"Walking-SA",
@@ -376,10 +394,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_4hvuk")
+"texture": SubResource("AtlasTexture_65a88")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_fo5bi")
+"texture": SubResource("AtlasTexture_05wy8")
 }],
 "loop": true,
 "name": &"Walking-SD",
@@ -395,6 +413,28 @@ animations = [{
 "loop": true,
 "name": &"Walking-W",
 "speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oomcs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7qasg")
+}],
+"loop": true,
+"name": &"Walking-WA",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hnolx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qpilx")
+}],
+"loop": true,
+"name": &"Walking-WD",
+"speed": 4.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sq1rf"]
@@ -406,7 +446,7 @@ script = ExtResource("1_2hh5m")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_klls2")
-animation = &"Idle-WD"
+animation = &"Walking-WD"
 autoplay = "Idle-S"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
